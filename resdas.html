@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册界面</title>
+	</head>
+	<script>
+		function checkForm()
+			{
+			var u=document.getElementById("user").value;
+			if(!^[a-zA-Z][a-zA-Z0-9_]{4,15}$.test(u));
+			{
+				alert("用户信息不能为空!");
+				return false;
+			}
+			var u1=document.getElementById("password").value;
+			if(u1=="")
+			{
+				alert("密码不能为空");
+				return false;
+			}
+			var u2=document.getElementById("repassword").value;
+			if(u2!=u1)
+			{
+				alert("两次密码不同");
+				return false;
+			}
+		var ux=document.getElementsByName("s");
+		ux.length;
+			var u3=document.getElementById("email").value;
+			if(!/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(u3))
+			{alert("邮箱格式不正确");
+			return false;}
+			}
+		
+	</script>
+	<body>
+		<table border="1px" align="center" width="1300px" cellpadding="0px" cellspacing="0px" bgcolor="">
+			<tr>
+				<td>
+					<table border="1px" width="100%">	
+							<tr height="50px">
+								<td width="33.3%">
+								<img src="img/logo2.png" height="47px"/>
+								</td>
+								<td width="33.3%"> 
+									<img  src="img/header.png" height="47px"/>
+								</td>
+								<td width="33.3%">
+									<a href="#">登录</a>
+									<a href="#">注册</a>
+									<a href="#">购物车</a>
+								</td>
+							</tr>	
+							
+						</table>
+				</td>
+			</tr>
+				<tr height="50px"> 
+				<td bgcolor="black">&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="#">	<font color="white">首页</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="#">	<font color="white">手机数码</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><font color="white">电脑办公</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><font color="white">家用电器</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="#">	<font color="white">雪靴箱包</font></a>
+				</td>
+			</tr>
+				<tr >
+				<td height="600px" background="img/regist_bg.jpg">
+					<form action="#" method="get" name="regForm" onsubmit="return checkForm()">
+					<table border="1px" width="750px" height="400px" align="center"  cebgcolor="white" cellpadding="0px" cellspacing="0px">
+						<tr height="40px" S>
+							<td colspan="2">
+								<font size="4">会员注册</font>&nbsp;&nbsp;&nbsp;USER RIGISTER
+							</td>
+							
+						</tr>	
+						<tr>
+							<td>用户名  </td>
+							<td><input type="text" name="user" size="34px" id="user"/></td>
+						</tr>
+						<tr>
+							<td>密码</td>
+							<td><input type="password" name="password"  size="34px" id="password"/> </td>
+						</tr>
+						<tr>
+							<td>确认密码</td>
+							<td><input type="password" name="repassword" size="34px" id="repassword"/> </td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td><input type="text" name="email" size="34px" id="email"/> </td>
+						</tr>
+						<tr>
+							<td>姓名</td>
+							<td><input  type="text" name="username" size="34px"/> </td>
+						</tr>
+						<tr>
+							<td>性别</td>
+							<td>
+								<input type="radio" name="sex" value="男" />男
+								<input type="radio" name="sex" value="女" />女
+							</td>
+						</tr>
+						<tr>
+							<td>出生日期</td>
+							<td><input type="text" name="birthday" size="34px"/> </td>
+						</tr>
+						<tr>
+							<td>验证码</td>
+							<td>
+								<input  type="text" name="yzm" size="34px"/>
+								<img src="img/yanzhengma.png"/>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="submit" value="注册"  />
+							</td>
+						
+						</tr>
+					</table>
+					</form>
+					
+				</td>
+			</tr>
+				<tr>
+				<td><img src="img/footer.jpg" width="100%"/></td>
+			</tr>
+				<tr>
+				<td align="center">
+					<a href="#">招贤纳士</a>
+					<a href="#">联系我们</a>
+					<a href="#">关于我们</a>
+					<a href="#">法律声明</a>
+					<a href="#">友情链接</a>
+					<a href="#">支付方式</a>
+					<a href="#">配送方式</a>
+					<a href="#">服务声明</a>
+					<a href="www.baidu.com">广告声明</a>
+					<p>Copyright @ 2005-2016 传智商城  版权所有</p>
+					
+				</td>
+			</tr>
+			
+			
+		</table>
+	</body>
+</html>

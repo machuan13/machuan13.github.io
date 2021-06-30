@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+<style>
+	
+	#1{
+		margin-top: 200px;
+		margin-left: 300px;
+		width: 500px;
+	}
+</style>
+	<body>
+
+<div id="1" class="1">
+<table border="1px" cellpadding="0px" cellsp
+		<tr>
+			<td>公文编号</td>
+			<td>公文题目</td>
+			<td>发送者</td>
+			<td>发送时间</td>
+			<td>发送状态</td>
+			<td>删除状态</td>
+		</tr>&nbsp;
+		
+		</table>	
+</div>
+
+		
+		
+	</body>
+<script>
+function check()
+{
+	
+var title=document.getElementById("title");
+var zhengwen=document.getElementById("zhengwen");
+if(title.value=="")
+{
+	alert("标题不能为空");
+	title.focus();
+	return false;
+}
+alert(zhengwen.value);
+if(zhengwen.value=="")
+{
+	alert("正文不能为空");
+	zhengwen.focus();
+	return false;
+}
+	}
+
+	
+</script>
+</html>
